@@ -7,11 +7,6 @@ a{
     text-decoration: none;
 }
 
-.nav{
-    height: 100px;
-}
-
-
 .nav ul {
     list-style: none;
     display: flex;
@@ -29,21 +24,19 @@ a{
     width: 1140px;
     margin: 0 auto;
 
+    
+}
+
+.nav .container{
     display: flex;
     justify-content: space-between;
-
-
-}
-
-body{
-    margin: 0;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.container{
-    width: 1140px;
-    margin: 0 auto;
     align-items: center;
+
+}
+
+
+.feature .container{
+    
     display: flex;
     height: inherit;
     justify-content: space-between;
@@ -111,6 +104,7 @@ ul li.follow {
     align-items: center;
     background: rgba(11, 2, 35, 0.1);
     padding: 10px;
+    text-transform: capitalize;
 }
 ul li.follow a{
     padding-right: 20px;
@@ -119,17 +113,28 @@ ul li.follow a:nth-last-child(1){
     padding-right: 0;
 }
 
-.feature{
+.feature .container{
     height: 80vh;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
+.goat {
+
+    width: 50%;
+}
+.image {
+    width: 40%;
+}
+
 
 .goat h1{
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 44px;
+    font-size: 42px;
+    margin: 0;
 }
+
 
 h1.colorful{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -149,7 +154,7 @@ h1.colorful{
     color: #FFF;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
 
@@ -168,4 +173,43 @@ a.btn1{
 }
 a.btn2{
     background: #4EC5F7;
+}
+.feature .container .image img{
+    width: 100%;
+}
+.online{
+    padding-top: 50px;
+}
+.online .row{
+    display: block;
+    text-align: center;
+}
+.online .video .col{
+    padding: 0;
+    margin-top: 30px;
+}
+.online .row .col img {
+    height: 80%;
+    width: 100%;
+    margin-top: 20px;
+}
+.online .row h1 .colorful{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+.online .row p{
+    color: #534C64;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;  
+}
+.online .video{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px
 }
