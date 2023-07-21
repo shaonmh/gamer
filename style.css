@@ -200,9 +200,8 @@ a.btn2{
     -webkit-text-fill-color: transparent;
     margin: 0;
 }
-.online .row p{
+.online .row p, p{
     color: #534C64;
-    text-align: center;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -212,4 +211,51 @@ a.btn2{
     display: flex;
     justify-content: space-around;
     gap: 20px
+}
+
+.play .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10%;
+    margin-top: 50px;
+}
+
+.play .container .text{
+    width: 20%;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.play .container .text h1{
+    margin: 0;
+}
+
+.play .container .text h1 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.play .container .image{
+    width: 48%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.play .container .img1{
+    width: 90%
+}
+
+
+
+
+.play .container .image .img2{
+    position: absolute;
+    left: -60px;
+    bottom: -50px;
+    z-index: 1;
+    width: 40%;
 }
