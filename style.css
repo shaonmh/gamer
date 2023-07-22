@@ -294,3 +294,50 @@ a.btn2{
     color: #FF42A5;
     box-sizing: border-box;
 }
+
+footer {
+    background: #0B0223;
+    color: #FFF;
+}
+footer .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+footer .menu, .terms, .copy{
+    display: flex;
+    justify-content: center;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+footer ul {
+    padding: 0 0 50px 0;
+}
+footer ul li a{
+    color: #FFF;
+    font-size: 16px;
+
+}
+.icon {
+    display: flex;
+    justify-content: center;
+}
+.icon ul li a {
+    font-size: 30px;
+}
+
+.terms ul li a  {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+}
