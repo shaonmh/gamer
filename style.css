@@ -189,9 +189,8 @@ a.btn2{
     margin-top: 30px;
 }
 .online .row .col img {
-    height: 80%;
+    height: 90%;
     width: 100%;
-    margin-top: 20px;
 }
 .online .row h1 .colorful{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -204,13 +203,49 @@ a.btn2{
     color: #534C64;
     font-size: 13px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 20px;  
 }
 .online .video{
     display: flex;
     justify-content: space-around;
-    gap: 20px
+    gap: 20px;
+    
+}
+.online .video .col{
+    position: relative;
+    width: 100%;
+}
+.online .video .col:before {
+    display:block;
+    width:100%;
+    height:90%;
+    content: ' ';
+    background:#fff;
+    /* padding:5px 10px; */
+    position:absolute;
+    border-radius: 5px;
+    top: 0;
+    right:0;
+    opacity:.0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.online .video .col:hover::before {
+    opacity:.5;
+    background:#333;
+}
+.online .video .col i{
+    display: none;
+}
+.online .video .col:hover i{
+    display: block;
+    position: absolute;
+    left: calc(50% - 25px );
+    top: calc(50% - 50px );
+    color: #FFF;
+    font-size: 50px;
 }
 
 .play .container{
@@ -271,8 +306,8 @@ a.btn2{
 }
 
 .cap{    
-    /* width: 200px; */
     display: flex;
+    position: relative;
     gap: 10px;
     margin-top: 20px;
     align-items: center;
@@ -282,12 +317,14 @@ a.btn2{
     color: #0B0223;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     cursor: pointer;
     border: 1px solid transparent;
     
 }
+
+
 .cap:hover{
 
     border-color:  #FF42A5;
@@ -329,6 +366,9 @@ footer ul li a{
     display: flex;
     justify-content: center;
 }
+.terms ul {
+    padding: 0;
+}
 .icon ul li a {
     font-size: 30px;
 }
@@ -341,3 +381,4 @@ footer ul li a{
     line-height: normal;
     font-size: 14px;
 }
+
